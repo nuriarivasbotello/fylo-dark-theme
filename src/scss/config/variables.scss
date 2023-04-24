@@ -1,5 +1,16 @@
 :root {
   /* Variables CSS */
+  --color-background-header: rgb(27, 35, 48);
+  --color-background-main: rgba(24, 31, 43, 1);
+  --color-button: linear-gradient(
+    90deg,
+    rgba(99, 225, 220, 1) 0%,
+    rgba(52, 160, 205, 1) 100%
+  );
+  --color-text: white;
+  --color-link: rgba(98, 224, 217, 1);
+  --font-raleway: 'Raleway', sans-serif;
+  --font-text: 'Open Sans', sans-serif;
 }
 
 /* Variables SASS */

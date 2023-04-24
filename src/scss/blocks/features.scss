@@ -1,0 +1,27 @@
+@use '../mixins/responsive.scss' as *;
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-top: 160px;
+  gap: 80px;
+  text-align: center;
+  @include responsive(desktop) {
+    display: grid;
+    grid-template-columns: 349px 349px;
+    gap: 150px;
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__title {
+    font-family: var(--font-raleway);
+  }
+  &__paragraph {
+    font-family: var(--font-text);
+    text-align: center;
+  }
+}

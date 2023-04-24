@@ -1,1 +1,14 @@
-
+@use '../mixins/responsive.scss' as *;
+.header {
+  background-color: var(--color-background-header);
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    @include responsive(desktop) {
+      margin: 0 150px;
+    }
+  }
+}

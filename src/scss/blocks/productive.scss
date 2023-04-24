@@ -1,0 +1,34 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/pseudo.scss' as *;
+.productive {
+  text-align: left;
+  @include responsive(desktop) {
+    display: flex;
+    flex-direction: row;
+    margin: 0 80px;
+  }
+  &__title {
+    font-family: var(--font-raleway);
+    font-weight: bold;
+  }
+  &__paragraph {
+    font-family: var(--font-text);
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-family: var(--font-text);
+    color: var(--color-link);
+    font-size: 15px;
+    &::before {
+      @include pseudo(1, 1) {
+        width: 180px;
+        height: 1px;
+        margin-top: 40px;
+        background-color: var(--color-link);
+      }
+    }
+  }
+}

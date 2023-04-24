@@ -1,1 +1,35 @@
 /* ESTILOS DEL MAIN */
+@use '../mixins/responsive.scss' as *;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  gap: 30px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/bg-curvy-mobile.svg),
+    linear-gradient(transparent 130px, var(--color-background-main) 110px);
+  @include responsive(desktop) {
+    background-image: url(../assets/images/bg-curvy-desktop.svg),
+      linear-gradient(transparent 430px, var(--color-background-main) 300px);
+  }
+  &__information {
+    @include responsive(desktop) {
+      width: 700px;
+    }
+  }
+  &__title {
+    font-family: var(--font-raleway);
+    font-weight: bold;
+    font-size: 35px;
+  }
+  &__paragraph {
+    font-family: var(--font-text);
+    font-style: normal;
+    @include responsive(desktop) {
+      font-size: 23px;
+    }
+  }
+}

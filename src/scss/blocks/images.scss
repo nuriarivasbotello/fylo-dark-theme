@@ -1,0 +1,21 @@
+@use '../mixins/responsive.scss' as *;
+.logo {
+  height: 30px;
+  align-items: center;
+}
+.photo {
+  width: 300px;
+  height: 225px;
+  align-items: center;
+  @include responsive(desktop) {
+    width: 720px;
+    height: 534px;
+    align-items: center;
+  }
+}
+.curve {
+  position: absolute;
+  top: 420px;
+  top: 100px;
+  z-index: -1;
+}
