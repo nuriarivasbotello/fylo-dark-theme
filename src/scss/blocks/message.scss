@@ -1,0 +1,31 @@
+@use '../mixins/responsive.scss' as *;
+.message{
+    width: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 110px;
+    padding-bottom:10px;
+    border-radius: 10px;
+    background-color: var(--color-background-header);
+    @include responsive(desktop) {
+        width: 863px;
+        height: 275px;
+        padding-bottom:30px;
+        position: relative;
+        top: 140px;
+    }
+    &__title{
+        font-family: var(--font-text);
+        font-weight: bold;
+        font-size: 20px;
+        padding-top:10px;
+    }
+    &__paragraph{
+        font-family: var(--font-text);
+        font-size: 15px;
+        padding: 0 20px;
+    }
+}

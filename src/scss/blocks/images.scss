@@ -23,4 +23,8 @@
   position:absolute;
   left:20px;
   bottom:-1800px;
+  @include responsive(desktop) {
+    left:240px;
+    bottom:-1380px;
+  }
 }

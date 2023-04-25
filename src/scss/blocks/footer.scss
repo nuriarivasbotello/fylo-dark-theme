@@ -1,1 +1,69 @@
 /* ESTILOS DEL FOOTER */
+@use '../mixins/responsive.scss' as *;
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:30px;
+    padding:150px 40px;
+    font-family: var(--font-text);
+    background-color: var(--color-background-footer);
+    color:rgba(128, 128, 128, 0.963);
+    &__logo{
+        width: 100px;
+        align-items: center;
+    }
+    &__information{
+        display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     gap:10px;
+     @include responsive(desktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+.maps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:40px;
+    @include responsive(desktop) {
+        width:400px ;
+    }
+
+}
+.mobile{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    align-items: center;
+
+}
+.gmail{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    align-items: center;
+}
+.about--us{
+display:flex;
+flex-direction: column;
+gap:20px;
+@include responsive(desktop) {
+    margin-top:50px ;
+}
+}
+.contact--us{
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    @include responsive(desktop) {
+        margin-top:20px;
+    }
+}
+}
