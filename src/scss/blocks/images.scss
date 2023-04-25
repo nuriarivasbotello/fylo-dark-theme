@@ -13,18 +13,12 @@
     align-items: center;
   }
 }
-.curve {
+.point {
   position: absolute;
-  top: 420px;
-  top: 100px;
-  z-index: -1;
-}
-.point{
-  position:absolute;
-  left:20px;
-  bottom:-1800px;
+  left: 20px;
+  bottom: -1830px;
   @include responsive(desktop) {
-    left:240px;
-    bottom:-1380px;
+    left: 240px;
+    bottom: -1380px;
   }
 }

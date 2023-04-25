@@ -6,3 +6,11 @@ body {
   color: var(--color-text);
   background-color: var(--color-background-header);
 }
+body.light {
+  color: black;
+  --color-background-header: rgb(173, 214, 237);
+  --color-background-main: rgb(255, 255, 255);
+  --color-background-reviews: rgb(156, 200, 209);
+  --color-background-footer: rgb(170, 172, 173);
+  --color-text: white;
+}
